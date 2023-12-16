@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="artist.css">
+</head>
+
+<body>
+
+  <!-- navbar start -->
+  <div class="topnav" id="myTopnav">
+    <a href="#home" class="active home">Home</a>
+    <a href="#signup" class="active1">Sign up</a>
+    <a href="#news">Connect a wallet</a>
+    <a href="#contact">Ranking</a>
+    <a href="#about">Marketplace</a>
+    <div class="icon" onclick="myFunction()">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+  </div>
+  <!-- navbar end -->
+
+  <main>
+    <!-- part 1 start -->
+
+    <div class="part1">
+      <img src="ing2.jpg" alt="" srcset="">
+    </div>
+
+    <!-- part 1 end -->
+
+    <!-- part 2 start-->
+
+    <div class="part2">
+      <div class="a">
+        <h1>Animakid</h1>
+        
+        <button class="bnt1"></button>
+        <br><br><br><br>
+        <button class="bnt2">+ follow</button>
+      </div>
+      <div class="b">
+        <span class="spana">250K+</span>
+        <span class="spana">50+</span>
+        <span class="spana">3000+</span>
+        <br>
+        <span class="spanb">Volume</span>
+        <span class="spanb ">NFTs Sold</span>
+        <span class="spanb followers">Followers</span>
+      </div>
+      <div class="c">
+        <h3>Bio</h3>
+        <p>The internet's friendliest designer kid.</p>
+      </div>
+      <div class="d">
+        <h3>Links</h3>
+        <a href="#"><img src="globe.svg" alt="" srcset=""></a>
+        <a href="#"><img src="discord.svg" alt="" srcset=""></a>
+        <a href="#"><img src="youtube.svg" alt="" srcset=""></a>
+        <a href="#"><img src="twiter.svg" alt="" srcset=""></a>
+        <a href="#"><img src="instagram.svg" alt="" srcset=""></a>
+      </div>
+    </div>
+
+    <!-- part 2 end -->
+
+  </main>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      var icon = document.getElementsByClassName("icon")[0];
+      if (x.className === "topnav") {
+        x.className += " responsive";
+        icon.className += " change";
+      } else {
+        x.className = "topnav";
+        icon.className = "icon";
+      }
+    }
+  </script>
+
+</body>
+
+</html>

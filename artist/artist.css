@@ -709,6 +709,12 @@ body {
     background: var(--Text, #FFF);
 }
 
+@media screen and (max-width: 600px) {
+    .email-form input[type="email"] {
+        width: 20rem;
+    }
+}
+
 .email-form input[type="Submit"] {
     display: flex;
     height: 3.75rem;

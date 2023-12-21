@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 /* navbar start */
@@ -139,7 +140,7 @@ body {
 .part2 {
     display: flex;
     width: 100%;
-    padding: 2.5rem 0rem;
+    padding: 2.5rem;
     flex-direction: column;
     align-items: center;
     gap: 1.875rem;
@@ -335,6 +336,7 @@ body {
         align-items: center;
         gap: 1.875rem;
         background: var(--Background, #2B2B2B);
+        padding: 1rem;
     }
 
     .part2 a {
@@ -350,7 +352,7 @@ body {
         color: var(--White, #FFF);
 
         /* H2 - Work Sans */
-        margin-left: 2rem;
+        margin-left: 4rem;
         font-family: Work Sans;
         font-size: 3.1875rem;
         font-style: normal;
@@ -362,7 +364,7 @@ body {
 
     .bnt1 {
         display: flex;
-        width: 90%;
+        width: 75%;
         height: 3.75rem;
         padding: 0rem 3.125rem;
         justify-content: center;
@@ -377,7 +379,7 @@ body {
 
     .bnt2 {
         display: flex;
-        width: 90%;
+        width: 75%;
         height: 3.75rem;
         padding: 0rem 1.875rem;
         justify-content: center;
@@ -386,15 +388,14 @@ body {
         text-align: center;
         border-radius: 1.25rem;
         border: 2px solid var(--Call-to-Action, #A259FF);
-
-
     }
 
     .a button {
         /* display: inline; */
         margin-top: -1rem;
         float: left;
-        margin-left: 2rem;
+        margin-left: 4rem;
+        cursor: pointer;
     }
 
     .part2 b {
@@ -512,3 +513,264 @@ body {
 }
 
 /* part 2 end */
+
+/* part 3 start */
+
+.part3 {
+    width: 100%;
+    background-color: #2B2B2B;
+    height: 2.5rem;
+}
+
+/* part 3 end */
+
+/* part 4 start */
+
+.part4 {
+    display: flex;
+    width: 100%;
+    padding: 5rem 0rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.875rem;
+
+    display: inline-block;
+
+    background: var(--Background---Secondary, #3B3B3B);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    align-items: center;
+    margin: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 5px;
+        align-items: center;
+        margin: 0rem;
+    }
+}
+
+/* @media screen and (max-width: 1500px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
+        align-items: center;
+        margin: 0rem;
+    }
+} */
+
+.card {
+    display: flex;
+    height: 29.3125rem;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 0;
+
+    margin: 2rem;
+
+    border-radius: 1.25rem;
+    background: var(--Background, #2B2B2B);
+
+    display: inline-block;
+}
+
+.card img {
+    height: 18.4375rem;
+    width: 100%;
+    align-self: stretch;
+
+    border-radius: 1.25rem 1.25rem 0rem 0rem;
+    /* background: url(img3.png), lightgray 50% / cover no-repeat; */
+}
+
+.container {
+    display: flex;
+    padding: 1.1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5625rem;
+    align-self: stretch;
+}
+
+.container h4 {
+    color: var(--White, #FFF);
+
+    margin-top: -1rem;
+
+    /* H5 - Work Sans */
+    font-family: Work Sans;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    /* 1.925rem */
+    text-transform: capitalize;
+}
+
+.profile {
+    display: inline;
+    margin-top: -5rem;
+}
+
+.profile img {
+    display: flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    justify-content: center;
+    align-items: center;
+
+    display: inline-block;
+}
+
+.profile h6 {
+    color: var(--White, #FFF);
+
+    display: inline-block;
+
+    /* Base (Body) - Space Mono */
+    font-family: Space Mono;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 1.4rem */
+}
+
+.container span {
+    margin-right: 3rem;
+}
+
+.container .a {
+    color: #858584;
+
+    /* Caption - Space Mono */
+    font-family: Space Mono;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+
+    align-self: stretch;
+
+    margin-top: -3rem;
+    /* margin-right: 5rem; */
+
+}
+
+.container .b {
+    color: var(--White, #FFF);
+
+    /* Base (Body) - Space Mono */
+    font-family: Space Mono;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 1.4rem */
+
+    align-self: stretch;
+
+    margin-top: -3rem;
+    /* margin-right: 3rem; */
+}
+
+/* part 4 end */
+
+/* footer start */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background: var(--Background---Secondary, #3B3B3B);
+    padding: 20px;
+}
+
+.footer div {
+    flex-basis: 30%;
+}
+
+.email-form input[type="email"] {
+    display: flex;
+    width: 26.25rem;
+    height: 1.75rem;
+    padding: 1rem 0rem 1rem 1.25rem;
+    align-items: center;
+    gap: 0.75rem;
+
+    border-radius: 1.25rem;
+    background: var(--Text, #FFF);
+}
+
+.email-form input[type="Submit"] {
+    display: flex;
+    height: 3.75rem;
+    padding: 0rem 3.125rem;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.75rem;
+
+    border-radius: 1.25rem;
+    background: var(--Call-to-Action, #A259FF);
+}
+
+/* Add this media query */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer div {
+        margin-bottom: 20px;
+    }
+}
+
+.footer h2 {
+    margin-left: 2.5rem;
+    margin-top: -2rem;
+
+    color: #FFF;
+
+    /* H5 - Space Mono */
+    font-family: Space Mono;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    /* 2.2rem */
+    text-transform: capitalize;
+}
+
+.footer p {
+    color: #CCC;
+
+    /* Base(Body) - Work Sans */
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 1.4rem */
+}
+
+.footer span {
+    color: #CCC;
+
+    /* Base(Body) - Work Sans */
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 1.4rem */
+    display: block;
+}
+
+/* footer end */
